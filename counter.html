@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #898682 ;
+      }
+      .container {
+        background-image: url(./many-knots.jpeg);
+        background-size: cover;
+        background-position: center;
+        border: 3px solid #000000;
+        border-radius: 20px;
+        width: 400px;
+        height: 350px;
+        padding: 20px;
+      }
+      h1, h2{
+        margin: 0;
+        margin-bottom: 1em;
+        text-align: center;
+        border-radius: 6px;
+      }
+      h1, .total-count{
+        font-size: 40px;
+        color: #cfcfcf;
+      }
+      h2 {
+        background-color: #9d9c9ca0; 
+        color: #403f3fe1;
+      }
+      .btn-container {
+        display: flex;
+        flex-direction: gap;
+      }
+      button {
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        width: 200px;
+        margin: 0;
+        margin-bottom: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .count-btn {
+        background-color: #740606c2;
+      }
+      .save-btn {
+        background-color: #026502cd;
+      }
+      .count-records{
+        display: block;
+      }
+      .record-container {
+        background-color: #9d9c9ca0;
+        color: #403f3fe1;
+        padding-bottom: 40px;
+        margin: 0;
+        height: 70px;
+      } 
+    </style>
+  </head>
+
+
+  <body>
+
+
+    <div class="container">
+      <h1 class="title"> Counter:</h1>
+      <h2 class="total-count"> 0</h2>
+
+      <div class="btn-container">
+        <button class="count-btn" onclick="pluseOne()"> Count </button>
+        <button class="save-btn" onclick="save()" >Save</button>
+      </div>
+
+      <h2 class="record-container"> Previous entries: 
+        <span class="count-records" ></span> 
+      </h2>
+    </div>
+    <script src="./counter.js"></script>
+    
+  </body>
+
+
+</html>
